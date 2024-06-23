@@ -19,7 +19,8 @@
 `data/alist-ddns-go`
 
 # 使用教程
-
+> 请查看官方文档
+> [！Alist(https://alist.nn.ci/logo.svg)](https://alist.nn.ci/zh/)
 
 
 
