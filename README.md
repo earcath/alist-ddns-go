@@ -25,7 +25,7 @@
 > ## ddns-go的GitHub仓库
 > #### https://github.com/jeessy2/ddns-go
 
-> [!注意]
+> [!NOTE]
 > 对于模块来说，原文档提供的命令无法将使用，模块提供了脚本来打开或关闭对应功能，脚本位于
 > 
 > `/data/alist-ddns-go/alist/tools`
