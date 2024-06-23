@@ -20,7 +20,7 @@
 
 # 使用教程
 > 请查看Alist官方文档
-> (https://alist.nn.ci/zh/)
+> #### https://alist.nn.ci/zh/
 
 > ddns-go的GitHub仓库
 > 
