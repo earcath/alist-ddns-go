@@ -27,8 +27,11 @@
 
 > [!NOTE]
 > 对于模块来说，原文档提供的命令无法将使用，模块提供了脚本来打开或关闭对应功能，脚本位于
+> 
 > `/data/alist-ddns-go/alist/tools`
+> 
 > `/data/alist-ddns-go/ddns-go/tools`
+> 
 > 当然，也可以通过命令的方式控制功能，详细命令如下：
 > ```
 > # 打开Alist
