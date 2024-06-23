@@ -1,3 +1,8 @@
+<div align="right">
+<a href="/README.md">中文</a> &nbsp;|&nbsp;
+<a href="/README_en-US.md">EN</a>
+</div>
+
 <div align="center">
 <h1>alist-ddns-go</h1>
 </div>
@@ -10,7 +15,7 @@ a Magisk module provide Alist and ddns-go support for Android
 
 [![Coolapk](https://img.shields.io/badge/酷安-良岁-hotpink?style=flat-square)](http://www.coolapk.com/u/11696005)
 
-
+# 
 
 
 
