@@ -20,7 +20,7 @@
 
 # 使用教程
 > 请查看Alist官方文档
-> [![Alist](<img src="[./.idea/download.png](https://alist.nn.ci/logo.svg)" width = "30" height = "30" alt="download" align=center /> )](https://alist.nn.ci/zh/)
+> [![Alist](<img src="[./.idea/download.png](https://alist.nn.ci/logo.svg)" width = "30" height = "30" alt="alist" align=center />)](https://alist.nn.ci/zh/)
 > [![Alist](style=flat-square&label=Alist&logo=https://alist.nn.ci/logo.svg)](https://alist.nn.ci/zh/)
 
 > ddns-go的GitHub仓库
