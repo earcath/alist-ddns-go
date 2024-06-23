@@ -23,6 +23,8 @@
 > #### https://alist.nn.ci/zh/
 
 > ddns-go的GitHub仓库
+> #### https://github.com/jeessy2/ddns-go
+>
 > 
 
 
