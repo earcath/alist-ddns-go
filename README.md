@@ -18,14 +18,23 @@
 # 模块工作目录
 `data/alist-ddns-go`
 
-# 使用教程
+# 使用教程&说明
 > 请查看Alist官方文档
 > #### https://alist.nn.ci/zh/
 
 > ddns-go的GitHub仓库
 > #### https://github.com/jeessy2/ddns-go
->
-> 
+
+> [!NOTE]
+> 对于模块来说，原文档提供的命令无法将使用，模块提供了脚本来打开或关闭对应功能，脚本位于`/data/alist-ddns-go/alist/tools`和`/data/alist-ddns-go/ddns-go/tools`，当然，也可以通过命令的方式控制功能，详细命令如下：
+>```
+> # 打开Alist
+>/data/alist-ddns-go/alist/script/alist.tool -s
+> # 关闭Alist
+>/data/alist-ddns-go/alist/script/alist.tool -k
+> # 更新Alist
+>/data/alist-ddns-go/alist/script/alist.tool -u
+>```
 
 
 
