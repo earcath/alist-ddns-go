@@ -19,8 +19,11 @@
 `data/alist-ddns-go`
 
 # 使用教程
-> 请查看官方文档
-> [![Alist](https://alist.nn.ci/logo.svg)](https://alist.nn.ci/zh/)
+> 请查看Alist官方文档
+> [![Alist](style=flat-square&label=Alist&logo=https://alist.nn.ci/logo.svg)](https://alist.nn.ci/zh/)
+
+> ddns-go的GitHub仓库
+> 
 
 
 
