@@ -7,7 +7,7 @@
 <h1>alist-ddns-go</h1>
 </div>
 
-a Magisk module provide Alist and ddns-go support for Android
+这是一个Magisk模块，它为安卓系统提供了Alist和ddns-go服务支持
 
 ![Release](https://img.shields.io/github/tag/liangsuimansui/alist-ddns-go?style=flat-square&label=Release)
 
@@ -15,7 +15,11 @@ a Magisk module provide Alist and ddns-go support for Android
 
 [![Coolapk](https://img.shields.io/badge/酷安-良岁-hotpink?style=flat-square)](http://www.coolapk.com/u/11696005)
 
-# 
+# 模块工作目录
+`data/alist-ddns-go`
+
+# 使用教程
+
 
 
 
