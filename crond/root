@@ -1,0 +1,2 @@
+0 8 * * * /data/alist-ddns-go/alist/script/alist.tool -u
+0 8 * * * /data/alist-ddns-go/ddns-go/script/ddns-go.tool -u
