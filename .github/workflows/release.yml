@@ -3,34 +3,37 @@ name: Release
 on:
   push:
     branches:
-      - master
+      - master  # 或者是您用于发布的任何分支
 
 jobs:
-  build-and-release:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Extract version from build.prop
-        run: echo "VERSION=$(grep 'version' build.prop | cut -d'=' -f2)" >> $GITHUB_ENV
-      - name: Compress files
-        run: zip -r alist-ddns-go_${{ env.VERSION }}.zip *
-      - name: Create Release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ env.VERSION }}
-          release_name: alist-ddns-go_${{ env.VERSION }}
-          body: 'Release of version ${{ env.VERSION }}'
-          draft: false
-          prerelease: false
-          upload_url: ${{ github.event.release.upload_url }}
-      - name: Upload Release Asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ github.event.release.upload_url }}
-          asset_path: ./alist-ddns-go_${{ env.VERSION }}.zip
-          asset_name: alist-ddns-go_${{ env.VERSION }}.zip
-          asset_content_type: application/zip
+    - uses: actions/checkout@v2
+    - name: 获取版本号
+      id: get_version
+      run: echo "VERSION=$(grep 'version' build.prop | cut -d'=' -f2)" >> $GITHUB_ENV
+    - name: 压缩文件
+      run: |
+        zip -r alist-ddns-go_${{ env.VERSION }}.zip ./*  # 根据版本号命名压缩包
+    - name: 创建 Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 确保您的仓库中设置了 GITHUB_TOKEN
+      with:
+        tag_name: ${{ env.VERSION }}
+        release_name: alist-ddns-go_${{ env.VERSION }}
+        draft: false
+        prerelease: false
+        body: |
+          发布的详细信息
+    - name: 上传 Release 文件
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}  # 从创建 Release 步骤获取上传 URL
+        asset_path: ./alist-ddns-go_${{ env.VERSION }}.zip
+        asset_name: alist-ddns-go_${{ env.VERSION }}.zip
+        asset_content_type: application/zip
