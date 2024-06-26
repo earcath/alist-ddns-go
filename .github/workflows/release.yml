@@ -1,0 +1,36 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Extract version from build.prop
+        run: echo "VERSION=$(grep 'version' build.prop | cut -d'=' -f2)" >> $GITHUB_ENV
+      - name: Compress files
+        run: zip -r alist-ddns-go_${{ env.VERSION }}.zip *
+      - name: Create Release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ env.VERSION }}
+          release_name: alist-ddns-go_${{ env.VERSION }}
+          body: 'Release of version ${{ env.VERSION }}'
+          draft: false
+          prerelease: false
+          upload_url: ${{ github.event.release.upload_url }}
+      - name: Upload Release Asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ./alist-ddns-go_${{ env.VERSION }}.zip
+          asset_name: alist-ddns-go_${{ env.VERSION }}.zip
+          asset_content_type: application/zip
