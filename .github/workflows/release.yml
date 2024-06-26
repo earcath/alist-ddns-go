@@ -12,7 +12,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: 获取版本号
       run: |
-        echo "VERSION=$(grep 'version' build.prop | cut -d'=' -f2)" >> $GITHUB_ENV
+        VERSION=$(grep 'version' build.prop | cut -d'=' -f2)
+        echo "VERSION=$VERSION" >> $GITHUB_ENV
     - name: 压缩文件
       run: |
         zip -r alist-ddns-go_${{ env.VERSION }}.zip ./*  # 根据版本号命名压缩包
@@ -20,7 +21,7 @@ jobs:
       id: create_release
       uses: actions/create-release@v1
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # 确保您的仓库中设置了 GITHUB_TOKEN
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         tag_name: v${{ env.VERSION }}  # 使用提取的版本号作为标签名
         release_name: alist-ddns-go_${{ env.VERSION }}  # 使用提取的版本号作为 Release 名称
@@ -33,7 +34,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}  # 从创建 Release 步骤获取上传 URL
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: ./alist-ddns-go_${{ env.VERSION }}.zip
         asset_name: alist-ddns-go_${{ env.VERSION }}.zip
         asset_content_type: application/zip
