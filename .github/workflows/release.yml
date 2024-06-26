@@ -1,4 +1,4 @@
-name: 自动压缩并发布 Release
+name: Release
 
 on:
   push:
