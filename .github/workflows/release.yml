@@ -26,7 +26,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         tag_name: v${{ env.VERSION }}  # 直接使用版本号作为标签名
-        release_name: alistddns-go_${{ env.VERSION }}  # 使用提取的版本号作为 Release 名称
+        release_name: alist-ddns-go_${{ env.VERSION }}  # 使用提取的版本号作为 Release 名称
         draft: false
         prerelease: false
         body: |
