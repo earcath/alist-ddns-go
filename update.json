@@ -1,6 +1,6 @@
 {
-  "versionCode": 100101,
-  "version": "1.0.10",
-  "zipUrl": "https://github.com/liangsuimansui/alist-ddns-go/releases/download/v1.0.10/alist-ddns-go_1.0.10.zip",
+  "versionCode": 15,
+  "version": "1.0.11",
+  "zipUrl": "https://github.com/liangsuimansui/alist-ddns-go/releases/download/v1.0.11/alist-ddns-go_1.0.11.zip",
   "changelog": "https://raw.githubusercontent.com/liangsuimansui/alist-ddns-go/main/changelog.md"
 }

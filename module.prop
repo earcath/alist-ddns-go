@@ -1,7 +1,7 @@
 id=alist-ddns-go
 name=Alist and ddns-go
-version=1.0.10
-versionCode=100102
+version=1.0.11
+versionCode=15
 author=良岁
 description=网页后台地址 Alist：http://127.0.0.1:5244 ddns-go：http://127.0.0.1:9876 日志目录：/data/alist-ddns-go/logs
 updateJson=https://raw.githubusercontent.com/liangsuimansui/alist-ddns-go/main/update.json

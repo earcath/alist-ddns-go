@@ -23,6 +23,10 @@
 > ## ddns-go的GitHub仓库
 > #### https://github.com/jeessy2/ddns-go
 
+> ## 提示
+> 首次安装Alist的账号为：`admin`
+> 密码在文件`/data/alist-ddns-go/logs/alist_run.log`中的`Successfully created the admin user and the initial password is:`
+
 > [!NOTE]
 > 对于模块来说，原文档提供的命令将无法使用，模块提供了脚本来打开或关闭对应功能，脚本位于
 > 

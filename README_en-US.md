@@ -22,6 +22,10 @@ This is a Magisk module that provides support for Alist and ddns-go services for
 > ## GitHub repo for ddns-go
 > #### https://github.com/jeessy2/ddns-go
 
+> ## prompt
+> The account that installed Alist for the first time was: `admin`
+> Password lookup`Successfully created the admin user and the initial password is:`in file`/data/alist-ddns-go/logs/alist_run.log`
+
 > [!NOTE]
 > For the module, the command provided by the original document will not be used, the module provides a script to turn the corresponding function on or off, the script is located in the
 > 

@@ -34,5 +34,5 @@ crond -c ${DATAPATH}/crond
 
 echo "PowerManagerService.noSuspend" > /sys/power/wake_lock
 
-nohup ${DATAPATH}/alist/script/alist.tool -s &
-nohup ${DATAPATH}/ddns-go/script/ddns-go.tool -s &
+${DATAPATH}/alist/script/alist.tool -s &
+${DATAPATH}/ddns-go/script/ddns-go.tool -s &

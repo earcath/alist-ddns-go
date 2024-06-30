@@ -1,3 +1,3 @@
 #!/system/bin/sh
 
-nohup /data/alist-ddns-go/ddns-go/script/ddns-go.tool -u > /dev/null 2>&1 &
+/data/alist-ddns-go/ddns-go/script/ddns-go.tool -u > /dev/null 2>&1 &
