@@ -20,7 +20,9 @@ jobs:
       run: echo "提取的版本号为 ${{ env.VERSION }} ${{ env.versionCode }}"
     - name: 压缩文件
       run: |
+        cd module
         zip -r alist-ddns-go-${{ env.VERSION }}-${{ env.versionCode }}-release.zip ./module/*  # 根据版本号命名压缩包
+        cd ..
     - name: 创建 Release
       id: create_release
       uses: actions/create-release@v1
