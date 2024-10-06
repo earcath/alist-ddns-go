@@ -11,5 +11,7 @@ until [ $(getprop init.svc.bootanim) = "stopped" ] ; do
     sleep 5
 done
 
+sleep 30
+
 ${DATAPATH}/scripts/tool.sh -u
 nohup ${DATAPATH}/scripts/service.sh -s &
