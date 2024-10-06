@@ -21,7 +21,7 @@ jobs:
     - name: 压缩文件
       run: |
         cd module
-        zip -r alist-ddns-go-${{ env.VERSION }}-${{ env.versionCode }}-release.zip ./module/*  # 根据版本号命名压缩包
+        zip -r alist-ddns-go-${{ env.VERSION }}-${{ env.versionCode }}-release.zip ./*  # 根据版本号命名压缩包
         cd ..
     - name: 创建 Release
       id: create_release
