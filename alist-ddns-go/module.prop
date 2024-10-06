@@ -1,0 +1,7 @@
+id=alist-ddns-go
+name=Alist and ddns-go
+version=1.1.0
+versionCode=20
+author=earcath
+description=默认管理地址：\nAlist：http://127.0.0.1:5244\nddns-go：http://127.0.0.1:9876\n日志目录：/data/alist-ddns-go/logs
+updateJson=https://mirror.ghproxy.com/https://raw.githubusercontent.com/earcath/alist-ddns-go/main/update.json

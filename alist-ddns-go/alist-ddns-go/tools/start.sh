@@ -1,0 +1,1 @@
+/data/alist-ddns-go/scripts/service.sh -s

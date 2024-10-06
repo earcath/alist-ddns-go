@@ -1,0 +1,24 @@
+# 自动更新间隔(默认每天更新)
+update_interval="0 8 * * *"
+
+# 代理网址
+proxy="https://mirror.ghproxy.com/"
+
+####################################
+######### 以下为不建议修改区域 ########
+####################################
+MODDIR="${0%/*}"
+
+# 模块工作路径
+DATAPATH="/data/alist-ddns-go"
+
+# 模块日志文件路径
+LOG_DIR="${DATAPATH}/logs"
+LOGS_FILE="${LOG_DIR}/module.log"
+ALIST_RUN_LOG="${LOG_DIR}/alist_run.log"
+DDNSGO_RUN_LOG="${LOG_DIR}/ddns-go_run.log"
+
+# 配置文件路径
+config_file="${DATAPATH}/config.json"
+
+source ${DATAPATH}/config.env

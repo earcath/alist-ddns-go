@@ -1,0 +1,10 @@
+{
+  "features": {
+    "enable_alist": true,
+    "enable_ddnsgo": true
+  },
+  "version": {
+    "alist": "3.37.4",
+    "ddnsgo": "6.7.0"
+  }
+}

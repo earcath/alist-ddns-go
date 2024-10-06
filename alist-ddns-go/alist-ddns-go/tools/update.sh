@@ -1,0 +1,1 @@
+/data/alist-ddns-go/scripts/tool.sh -u
